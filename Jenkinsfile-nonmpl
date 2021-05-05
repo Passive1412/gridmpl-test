@@ -22,10 +22,19 @@ pipeline {
       }
     }
     stage( 'Build' ) {
+      steps {
+        echo 'Any custom steps you want'
+      }
     }
     stage( 'Deploy' ) {
+      steps {
+        echo 'Any custom steps you want'
+      }
     }
     stage( 'Test' ) {
+      steps {
+        echo 'Any custom steps you want'
+      }
     }
   }
   post {
