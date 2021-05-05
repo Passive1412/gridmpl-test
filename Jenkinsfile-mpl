@@ -2,7 +2,7 @@
 @Library('mpl') _
 
 MPLPipeline {
-node( 'master' ) {
+
   stage( 'Application Checkout' ) {
     MPLModule('Checkout')
   }
@@ -15,5 +15,4 @@ node( 'master' ) {
   stage( 'Test' ) {
     MPLModule()
   }
-}
 }
